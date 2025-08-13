@@ -7,6 +7,7 @@ import CharacterCounter from "./components/charcount";
 import Dropdown from "./components/dropdown";
 import PjJoke from "./components/joke";
 import Timer from "./components/CountdownTimer";
+import AppRoutes from "./routes/AppRoutes";
 
 function App(){
   return(
@@ -20,6 +21,7 @@ function App(){
     <Dropdown/>
     <PjJoke/>
     <Timer/>
+    <AppRoutes/>
     </div>
   );
 }
