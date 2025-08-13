@@ -4,6 +4,7 @@ import ToggleText from "./components/Toggle";
 import PasswordShow from "./components/Password";
 import EmailValidationForm from "./components/form";
 import CharacterCounter from "./components/charcount";
+import Dropdown from "./components/dropdown";
 
 function App(){
   return(
@@ -14,6 +15,7 @@ function App(){
     <PasswordShow/>
     <EmailValidationForm/>
     <CharacterCounter/>
+    <Dropdown/>
     </div>
   );
 }

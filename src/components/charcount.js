@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 function CharacterCounter(){
     const [text, setText] = useState("");
-    function handleChange(){
+    function handleChange(e){
     setText(e.target.value);
     }
 
