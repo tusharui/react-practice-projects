@@ -1,11 +1,20 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function Counter (){
     const[count, setCount] = useState(0);
     function reset (){
         setCount(0);
     }
+
+    // useeffect 
+    useEffect(()=>{
+        document.title = `Count : ${count}`;
+    },[count]);
+
+    useEffect(()=>{
+        console.log("welcome!!")
+    },[]);
 
     return(
         <div>
