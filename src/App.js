@@ -6,6 +6,7 @@ import EmailValidationForm from "./components/form";
 import CharacterCounter from "./components/charcount";
 import Dropdown from "./components/dropdown";
 import PjJoke from "./components/joke";
+import Timer from "./components/CountdownTimer";
 
 function App(){
   return(
@@ -18,6 +19,7 @@ function App(){
     <CharacterCounter/>
     <Dropdown/>
     <PjJoke/>
+    <Timer/>
     </div>
   );
 }
