@@ -1,16 +1,26 @@
-import React from "react";
-import { useState } from "react";
-function ToggleText(){
-    const[isHello, setisHello] = useState(true);
-    function toggle (){
-        setisHello(!isHello)
-    }
+import React, { useState } from "react";
 
-    return(
-        <div>
-            <h2>{isHello ? "Hello": "Goodbye"}</h2>
-            <button onClick={toggle}>Toggle Text</button>
-        </div>
-    );
+function ToggleText() {
+  const [isHello, setIsHello] = useState(true);
+  const [isDark, setIsDark] = useState(true);
+
+  function toggle() {
+    setIsHello(!isHello);
+  }
+
+  function changeColor() {
+    setIsDark(!isDark);
+  }
+
+  return (
+    <div>
+      <h2 style={{ color: isDark ? "#000000" : "#FF0000" }}>
+        {isHello ? "Hello" : "Goodbye"}
+      </h2>
+      <button onClick={toggle}>Toggle Text</button>
+      <button onClick={changeColor}>Change Color</button>
+    </div>
+  );
 }
+
 export default ToggleText;
